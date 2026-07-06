@@ -1,0 +1,2495 @@
+/* ===================================
+            GOOGLE FONT
+=================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================================
+            ROOT COLOR
+=================================== */
+
+:root{
+
+    --navy:#102a5c;
+    --gold:#d4a028;
+    --gold-light:#f7edd3;
+    --cream:#fcfaf6;
+    --text:#555;
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* ===================================
+            RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--cream);
+    color:var(--navy);
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+section{
+
+    width:90%;
+    max-width:1280px;
+    margin:auto;
+
+}
+
+/* ===================================
+            BACKGROUND
+=================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:-180px;
+    right:-180px;
+
+    width:520px;
+    height:520px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(212,160,40,.45),
+    transparent 70%);
+
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:-180px;
+    left:-180px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(212,160,40,.18),
+    transparent 70%);
+
+    z-index:-1;
+
+}
+
+/* ===================================
+            NAVBAR
+=================================== */
+
+.navbar{
+
+    width:90%;
+    max-width:1280px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 0;
+
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:var(--gold);
+
+}
+
+.menu{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+    color:#444;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:var(--gold);
+
+}
+
+.btn-download{
+
+    background:var(--navy);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-download:hover{
+
+    background:var(--gold);
+
+}
+
+/* ===================================
+            HERO
+=================================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ===================================
+            TEXT
+=================================== */
+
+.hello{
+
+    color:var(--gold);
+
+    font-size:24px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+    line-height:1.05;
+
+}
+
+.hero h3{
+
+    margin-top:20px;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#666;
+
+}
+
+.description{
+
+    margin-top:28px;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ===================================
+            BUTTON
+=================================== */
+
+.hero-button{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.btn-primary{
+
+    background:var(--navy);
+
+    color:white;
+
+    padding:16px 32px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--gold);
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--gold);
+
+    color:var(--navy);
+
+    padding:16px 32px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:white;
+
+}
+
+/* ===================================
+            HERO IMAGE
+=================================== */
+
+.hero-right img{
+
+    width:430px;
+
+    height:530px;
+
+    object-fit:cover;
+
+    background:var(--navy);
+
+    padding:14px;
+
+    border-radius:220px 220px 30px 30px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+    transition:.4s;
+
+}
+
+.hero-right img:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===================================
+            SOCIAL
+=================================== */
+
+.social{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.social a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--navy);
+
+    text-decoration:none;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    background:var(--gold);
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+.social i{
+
+    font-size:20px;
+
+}
+
+/* ===================================
+            STATS
+=================================== */
+
+.stats{
+
+    width:90%;
+    max-width:1280px;
+
+    margin:auto;
+
+    margin-top:-20px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-box{
+
+    text-align:center;
+
+}
+
+.stat-box h2{
+
+    color:var(--navy);
+
+    font-size:36px;
+
+}
+
+.stat-box p{
+
+    color:#666;
+
+    margin-top:8px;
+
+}
+
+/* ===================================
+            RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding:80px 0;
+
+}
+
+.hero-button{
+
+justify-content:center;
+
+}
+
+.social{
+
+justify-content:center;
+
+}
+
+.hero-right img{
+
+width:330px;
+
+height:420px;
+
+}
+
+.stats{
+
+flex-wrap:wrap;
+
+gap:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.menu{
+
+display:none;
+
+}
+
+.btn-download{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h3{
+
+font-size:24px;
+
+}
+
+.description{
+
+font-size:16px;
+
+}
+
+}
+
+/* =====================================================
+                    ABOUT SECTION
+====================================================== */
+
+.about{
+
+    padding:120px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+}
+
+.section-title h2{
+
+    margin-top:12px;
+
+    font-size:42px;
+
+    color:var(--navy);
+
+}
+
+.section-title p{
+
+    width:650px;
+
+    max-width:90%;
+
+    margin:18px auto 0;
+
+    color:#777;
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+                    ABOUT SECTION
+====================================================== */
+
+.about{
+
+    width:90%;
+    margin:120px auto;
+
+}
+
+/* ================= TITLE ================= */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:#d4a028;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.section-title h2{
+
+    display:inline-block;
+
+    position:relative;
+
+    margin-top:12px;
+
+    font-size:42px;
+
+    color:#0f2346;
+
+}
+
+.section-title h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:-15px;
+
+    width:80px;
+
+    height:4px;
+
+    background:#d4a028;
+
+    border-radius:20px;
+
+}
+
+/* ================= CONTAINER ================= */
+
+.about-container{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    padding:60px;
+
+    background:white;
+
+    border-radius:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+/* efek background halus */
+
+.about-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.95),
+        rgba(252,250,246,.85)
+    );
+
+    z-index:0;
+
+}
+
+.about-image,
+.about-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ================= FOTO ================= */
+
+.about-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+/* lingkaran cream */
+
+.about-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    background:#f7e8bd;
+
+    border-radius:50%;
+
+    top:-25px;
+
+    left:30px;
+
+    opacity:.45;
+
+    z-index:0;
+
+}
+
+/* lingkaran outline */
+
+.about-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:95px;
+
+    height:95px;
+
+    border:3px solid #d4a028;
+
+    border-radius:50%;
+
+    bottom:20px;
+
+    right:40px;
+
+    opacity:.35;
+
+    z-index:1;
+
+}
+
+.about-image img{
+
+    width:340px;
+
+    padding:14px;
+
+    background:white;
+
+    border-radius:40px;
+
+    object-fit:cover;
+
+    transform:rotate(-2deg);
+
+    box-shadow:0 25px 50px rgba(15,35,70,.15);
+
+    transition:.4s;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.about-image img:hover{
+
+    transform:rotate(0deg) translateY(-8px);
+
+}
+
+/* ================= ISI ================= */
+
+.about-content{
+
+    flex:1.2;
+
+}
+
+.about-content h3{
+
+    font-size:34px;
+
+    color:#0f2346;
+
+    margin-bottom:25px;
+
+}
+
+.about-content p{
+
+    color:#666;
+
+    line-height:2;
+
+    margin-bottom:22px;
+
+    text-align:justify;
+
+}
+
+.about-content blockquote{
+
+    border-left:4px solid #d4a028;
+
+    padding-left:20px;
+
+    margin-bottom:30px;
+
+    color:#777;
+
+    font-style:italic;
+
+    line-height:1.8;
+
+}
+
+/* ================= CARD ================= */
+
+.about-card{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.card{
+
+    flex:1;
+
+    background:#fff;
+
+    padding:28px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    border:1px solid rgba(212,160,40,.15);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.card i{
+
+    font-size:30px;
+
+    color:#d4a028;
+
+    margin-bottom:18px;
+
+}
+
+.card h4{
+
+    color:#0f2346;
+
+    margin-bottom:10px;
+
+}
+
+.card span{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.about{
+
+    margin:90px auto;
+
+}
+
+.about-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px 30px;
+
+}
+
+.about-content{
+
+    width:100%;
+
+}
+
+.about-content p{
+
+    text-align:center;
+
+}
+
+.about-card{
+
+    flex-direction:column;
+
+}
+
+.about-image::before{
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.about-image::after{
+
+    right:20%;
+
+}
+
+.about-image img{
+
+    width:290px;
+
+}
+
+}
+
+/* =====================================================
+                PROFESSIONAL JOURNEY
+====================================================== */
+
+.journey{
+    width:90%;
+    margin:140px auto;
+}
+
+/* ================= TITLE ================= */
+
+.journey .section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.journey .section-title span{
+    color:#d4a028;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.journey .section-title h2{
+    margin-top:15px;
+    font-size:42px;
+    color:#0f2346;
+}
+
+.journey-subtitle{
+    width:65%;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+}
+
+/* ================= TIMELINE ================= */
+
+.journey-timeline{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    margin:80px 0 120px;
+}
+
+.journey-timeline::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    height:4px;
+    background:#d4a028;
+    transform:translateY(-50%);
+    border-radius:50px;
+}
+
+.timeline-item{
+    position:relative;
+    z-index:2;
+}
+
+.timeline-item span{
+    width:72px;
+    height:72px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#fff;
+    border:5px solid #d4a028;
+    font-weight:700;
+    color:#0f2346;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.timeline-item span:hover{
+    background:#d4a028;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+/* ================= GRID ================= */
+
+.journey-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:90px 35px;
+}
+
+/* ================= CARD ================= */
+
+.journey-card{
+    position:relative;
+    background:#fff;
+    border-radius:30px;
+    padding:95px 28px 30px;
+    box-shadow:0 18px 45px rgba(15,35,70,.08);
+    transition:.4s;
+    overflow:visible;
+    border:1px solid rgba(212,160,40,.12);
+}
+
+.journey-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 28px 60px rgba(15,35,70,.15);
+}
+
+/* zig zag */
+
+.journey-card:nth-child(2),
+.journey-card:nth-child(5){
+    margin-top:45px;
+}
+
+/* ================= IMAGE ================= */
+
+.journey-image{
+    position:absolute;
+    top:-55px;
+    left:50%;
+    transform:translateX(-50%);
+    width:140px;
+    height:140px;
+    padding:8px;
+    background:#fff;
+    border-radius:35px;
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.journey-image::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+    background:#efd79d;
+    border-radius:inherit;
+    z-index:-1;
+}
+
+.journey-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:inherit;
+    transition:.45s;
+}
+
+.journey-card:hover img{
+    transform:scale(1.05);
+}
+
+/* ================= FOTO KHUSUS ================= */
+
+.photo-rounded{
+    border-radius:30px;
+}
+
+.photo-blob{
+    border-radius:58% 42% 35% 65%;
+}
+
+.photo-premium{
+    border-radius:45px 45px 18px 18px;
+}
+
+.photo-circle{
+    border-radius:50%;
+}
+
+.logo-campus{
+    object-fit:contain !important;
+    background:#fff;
+    padding:15px;
+}
+
+/* ================= CONTENT ================= */
+
+.journey-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#f7ebc8;
+    color:#8b6a14;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.journey-content h3{
+    color:#0f2346;
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+.journey-content h4{
+    color:#666;
+    font-size:17px;
+    margin-bottom:18px;
+    font-weight:500;
+}
+
+.journey-content p{
+    color:#777;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* ================= NEXT CARD ================= */
+
+.next-card{
+    background:#0f2346 !important;
+}
+
+.next-card .badge{
+    background:#d4a028;
+    color:#fff;
+}
+
+.next-card h3{
+    color:#fff;
+}
+
+.next-card h4{
+    color:#e6e6e6;
+}
+
+.next-card p{
+    color:#f3f3f3;
+}
+
+.next-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2346,#244f88);
+}
+
+.next-image i{
+    font-size:65px;
+    color:#d4a028;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .journey-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .journey-card:nth-child(2),
+    .journey-card:nth-child(5){
+        margin-top:0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .journey{
+        margin:100px auto;
+    }
+
+    .journey-subtitle{
+        width:100%;
+    }
+
+    .journey-grid{
+        grid-template-columns:1fr;
+        gap:80px;
+    }
+
+    .journey-timeline{
+        overflow-x:auto;
+        gap:30px;
+        padding-bottom:20px;
+    }
+
+    .timeline-item{
+        min-width:72px;
+    }
+
+}
+
+/* =====================================================
+                FEATURED PROJECTS
+====================================================== */
+
+.projects{
+
+    width:90%;
+    margin:150px auto;
+
+}
+
+.projects .section-title{
+
+    text-align:center;
+    margin-bottom:80px;
+
+}
+
+.projects .section-title span{
+
+    color:#d4a028;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+
+}
+
+.projects .section-title h2{
+
+    margin-top:15px;
+    font-size:42px;
+    color:#0f2346;
+
+}
+
+.project-subtitle{
+
+    width:65%;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.8;
+
+}
+
+/* ================= PROJECT ITEM ================= */
+
+.project-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    margin-bottom:140px;
+
+}
+
+.project-item.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+/* ================= LEFT ================= */
+
+.project-info{
+
+    flex:1;
+
+}
+
+.project-number{
+
+    color:#d4a028;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.project-info h3{
+
+    margin-top:18px;
+
+    font-size:36px;
+
+    color:#0f2346;
+
+}
+
+.project-info h4{
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+.project-info p{
+
+    margin:28px 0;
+
+    color:#666;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+/* ================= TECH ================= */
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.tech-stack span{
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:#f7ebc8;
+
+    color:#8b6a14;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.tech-stack span:hover{
+
+    background:#d4a028;
+
+    color:white;
+
+}
+
+/* ================= GALLERY ================= */
+
+.project-gallery{
+
+    flex:1.1;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.project-gallery img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+/* Dashboard */
+
+.project-gallery .big{
+
+    grid-column:1 / 3;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+/* lainnya */
+
+.project-gallery img:not(.big){
+
+    height:160px;
+
+    object-fit:cover;
+
+}
+
+/* Hover */
+
+.project-gallery img:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 60px rgba(0,0,0,.15);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+.project-item{
+
+    flex-direction:column;
+
+}
+
+.project-item.reverse{
+
+    flex-direction:column;
+
+}
+
+.project-gallery{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.project-subtitle{
+
+    width:100%;
+
+}
+
+.project-info h3{
+
+    font-size:30px;
+
+}
+
+.project-gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-gallery .big{
+
+    grid-column:auto;
+
+    height:250px;
+
+}
+
+.project-gallery img:not(.big){
+
+    height:220px;
+
+}
+
+}
+
+/* =====================================================
+                SKILLS & TOOLS
+====================================================== */
+
+.skills{
+    width:90%;
+    margin:150px auto;
+}
+
+.skills .section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.skills .section-title span{
+    color:#d4a028;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.skills .section-title h2{
+    margin-top:15px;
+    font-size:42px;
+    color:#0f2346;
+}
+
+.skills-subtitle{
+    width:65%;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.skill-card{
+    background:#fff;
+    padding:40px;
+    border-radius:28px;
+    box-shadow:0 18px 45px rgba(15,35,70,.08);
+    transition:.35s;
+    border:1px solid rgba(212,160,40,.15);
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 55px rgba(15,35,70,.15);
+}
+
+.skill-card.full{
+    grid-column:1 / 3;
+}
+
+.skill-icon{
+    width:75px;
+    height:75px;
+    background:#f8f1df;
+    color:#d4a028;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.skill-card h3{
+    color:#0f2346;
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill-tags span{
+    padding:10px 18px;
+    border-radius:30px;
+    background:#f7ebc8;
+    color:#8b6a14;
+    font-weight:600;
+    transition:.3s;
+}
+
+.skill-tags span:hover{
+    background:#d4a028;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.skills-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.skill-card.full{
+
+    grid-column:auto;
+
+}
+
+.skills-subtitle{
+
+    width:100%;
+
+}
+
+}
+
+/* =====================================================
+            CONTINUOUS LEARNING
+====================================================== */
+
+.learning{
+
+    width:90%;
+    margin:150px auto;
+
+}
+
+.learning .section-title{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.learning .section-title span{
+
+    color:#d4a028;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:700;
+
+}
+
+.learning .section-title h2{
+
+    margin-top:15px;
+    font-size:42px;
+    color:#0f2346;
+
+}
+
+.learning-subtitle{
+
+    width:65%;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+
+}
+
+/* ================= CARD ================= */
+
+.learning-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+
+}
+
+.learning-card{
+
+    display:flex;
+    align-items:flex-start;
+    gap:28px;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 40px rgba(15,35,70,.08);
+
+    border-left:6px solid #d4a028;
+
+    transition:.35s;
+
+}
+
+.learning-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 55px rgba(15,35,70,.15);
+
+}
+
+/* ================= ICON ================= */
+
+.learning-icon{
+
+    min-width:80px;
+    width:80px;
+    height:80px;
+
+    background:#f7ebc8;
+
+    border-radius:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.learning-icon i{
+
+    font-size:34px;
+    color:#d4a028;
+
+}
+
+/* ================= CONTENT ================= */
+
+.learning-content{
+
+    flex:1;
+
+}
+
+.learning-type{
+
+    display:inline-block;
+
+    padding:7px 16px;
+
+    background:#0f2346;
+
+    color:white;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+.learning-content h3{
+
+    font-size:25px;
+
+    color:#0f2346;
+
+    margin-bottom:8px;
+
+}
+
+.learning-content h4{
+
+    color:#777;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+}
+
+.learning-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.learning-subtitle{
+
+    width:100%;
+
+}
+
+.learning-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.learning-icon{
+
+    margin:auto;
+
+}
+
+}
+
+/* =====================================================
+                    CONTACT
+====================================================== */
+
+.contact{
+
+    width:90%;
+    margin:150px auto;
+
+}
+
+.contact .section-title{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.contact .section-title span{
+
+    color:#d4a028;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:700;
+
+}
+
+.contact .section-title h2{
+
+    margin-top:15px;
+    font-size:42px;
+    color:#0f2346;
+
+}
+
+.contact-subtitle{
+
+    width:65%;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.9;
+
+}
+
+/* Layout */
+
+.contact-container{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+
+}
+
+/* Foto */
+
+.contact-image{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.contact-image img{
+
+    width:380px;
+    border-radius:40px;
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+/* Card */
+
+.contact-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:0 18px 45px rgba(15,35,70,.08);
+
+}
+
+.contact-card a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    text-decoration:none;
+
+    color:#0f2346;
+
+    margin-bottom:22px;
+
+    transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+    transform:translateX(8px);
+
+}
+
+.contact-card i{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    background:#f7ebc8;
+
+    color:#d4a028;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.contact-card h4{
+
+    margin-bottom:4px;
+
+}
+
+.contact-card span{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.download-cv{
+
+    margin-top:30px;
+
+    background:#0f2346;
+
+    color:white !important;
+
+    padding:18px;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+}
+
+.download-cv i{
+
+    background:none;
+
+    color:#d4a028;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-subtitle{
+
+width:100%;
+
+}
+
+.contact-image img{
+
+width:280px;
+
+}
+
+}
+
+/* =====================================================
+                        FOOTER
+====================================================== */
+
+.footer{
+
+    margin-top:150px;
+
+    background:#0f2346;
+
+    color:white;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-container{
+
+    width:90%;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-logo h2{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-logo span{
+
+    color:#d4a028;
+
+}
+
+.footer-logo p{
+
+    width:55%;
+
+    margin:0 auto;
+
+    line-height:1.9;
+
+    color:#d9d9d9;
+
+}
+
+/* ================= SOCIAL ================= */
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:45px 0;
+
+}
+
+.footer-social a{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#ffffff15;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:#d4a028;
+
+    transform:translateY(-8px);
+
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding-top:25px;
+
+}
+
+.footer-bottom p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+    font-size:15px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.footer-logo p{
+
+    width:100%;
+
+}
+
+.footer-social{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+/* =====================================================
+                RESPONSIVE TABLET
+====================================================== */
+
+@media (max-width:992px){
+
+    section{
+        width:90% !important;
+        margin:100px auto !important;
+    }
+
+    .section-title h2{
+        font-size:36px;
+    }
+
+    .section-title{
+        margin-bottom:50px;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        width:92%;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+        padding:20px 0;
+    }
+
+    .menu{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    /* Hero */
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:45px;
+        min-height:auto;
+        padding-top:30px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-button{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .social{
+        justify-content:center;
+    }
+
+    .hero-right img{
+        width:300px;
+        height:auto;
+    }
+
+    /* About */
+
+    .about-container{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .about-image,
+    .about-content{
+        width:100%;
+        text-align:center;
+    }
+
+    .about-card{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    /* Journey */
+
+    .journey-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Project */
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Skills */
+
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact */
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .contact-image{
+        order:-1;
+    }
+
+}
+
+/* =====================================================
+                RESPONSIVE MOBILE
+====================================================== */
+
+@media (max-width:576px){
+
+    /* Section */
+
+    section{
+        width:92% !important;
+        margin:70px auto !important;
+    }
+
+    /* Title */
+
+    .section-title{
+        margin-bottom:35px;
+    }
+
+    .section-title span{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        width:94%;
+        padding:18px 0;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .menu{
+        gap:12px;
+    }
+
+    .menu a{
+        font-size:14px;
+    }
+
+    .btn-download{
+        display:none;
+    }
+
+    /* Hero */
+
+    .hero{
+        gap:35px;
+        padding-top:15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero h3{
+        font-size:18px;
+        margin-top:12px;
+    }
+
+    .description{
+        font-size:15px;
+        line-height:1.8;
+        margin-top:18px;
+    }
+
+    .hero-right img{
+        width:230px;
+    }
+
+    .hero-button{
+        gap:12px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+        padding:14px;
+    }
+
+    /* Stats */
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .stat-box{
+        padding:20px;
+    }
+
+    /* About */
+
+    .about-card{
+        gap:15px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    /* Journey */
+
+    .journey-grid{
+        grid-template-columns:1fr;
+        gap:70px;
+    }
+
+    .journey-card{
+        padding:75px 20px 25px;
+    }
+
+    .journey-image{
+        width:105px;
+        height:105px;
+        top:-45px;
+    }
+
+    .journey-content h3{
+        font-size:20px;
+    }
+
+    /* Projects */
+
+    .project-card{
+        padding:18px;
+    }
+
+    /* Skills */
+
+    .skill-card{
+        padding:22px;
+    }
+
+    /* Learning */
+
+    .learning-card{
+        padding:20px;
+    }
+
+    /* Contact */
+
+    .contact-card{
+        padding:25px;
+    }
+
+    .contact-image img{
+        width:220px;
+    }
+
+    /* Footer */
+
+    .footer{
+        margin-top:80px;
+    }
+
+    .footer-logo p{
+        width:100%;
+        font-size:14px;
+    }
+
+}
